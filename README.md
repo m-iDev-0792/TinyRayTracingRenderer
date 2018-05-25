@@ -20,7 +20,7 @@ Build需要CMake+OpenCV+OpenMP(可选)
 
 256采样数结果
 
-![](img/256spp.PNG)
+![](img/256spp.png)
 
 各个采样数效果比较
 ![](img/compare.PNG)

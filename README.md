@@ -20,11 +20,8 @@ Build需要CMake+OpenCV+OpenMP(可选)
 
 ManyBalls@64samples
 
-<<<<<<< HEAD
 ![](img/64manyballs.png)
-=======
-![](img/256spp.png)
->>>>>>> origin/master
+
 
 各个采样数效果比较
 

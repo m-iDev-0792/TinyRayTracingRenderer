@@ -79,8 +79,12 @@ Sphere spheres[] = {
     Sphere(1e5, Vec(50, 1e5, 81.6), Vec(), Vec(.75, .75, .75), DIFF),            //底部
     Sphere(1e5, Vec(50, -1e5 + 81.6, 81.6), Vec(), Vec(.75, .75, .75), DIFF),            //顶部
     Sphere(16.5, Vec(27, 16.5, 47), Vec(), Vec(1, 1, 1) * .999, SPEC),            //镜面球
+    Sphere(16.5, Vec(50, 50, 47), Vec(), Vec(1, 1, 1) * .999, SPEC),            //镜面球
     Sphere(16.5, Vec(73, 16.5, 78), Vec(), Vec(1, 1, 1) * .999, REFR),            //玻璃球
+    Sphere(8, Vec(27, 8, 90), Vec(), Vec(0.5, 0.5, 0.5), DIFF),            //漫反射
+    Sphere(5, Vec(35, 5, 100), Vec(), Vec(0.125, 0.84, 0.553), DIFF),            //漫反射
     Sphere(600, Vec(50, 681.6 - .27, 81.6), Vec(12, 12, 12), Vec(), DIFF)             //光源
+
 };
 
 inline double clamp(double x) {
@@ -133,7 +137,7 @@ int main(int argc, char *argv[]) {
 	time_t startTime,curTime;
 	time(&startTime);
     int w = 1024, h = 768;
-	int samps = argc == 2 ? atoi(argv[1]) / 4 : 4;     //采样数
+	int samps = argc == 2 ? atoi(argv[1]) / 4 : 16;     //采样数
     Ray cam(Vec(50, 52, 295.6), Vec(0, -0.042612, -1).norm());     // cam pos, dir
     Vec cx = Vec(w * .5135 / h), cy = (cx % cam.d).norm() * .5135, r, *c = new Vec[w * h];
 #pragma omp parallel for schedule(dynamic, 1) private(r)       // OpenMP

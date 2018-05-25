@@ -18,13 +18,17 @@ Build需要CMake+OpenCV+OpenMP(可选)
 
 ●OpenMP并行计算加速（性能还是呵呵...）
 
-256采样数结果
+ManyBalls@64samples
 
-![](img/256spp.PNG)
+![](img/64manyballs.png)
 
 各个采样数效果比较
+
 ![](img/compare.PNG)
 
+256采样数结果
+
+![](img/256spp.png)
 TODO.
 
 ●添加界面

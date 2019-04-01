@@ -20,14 +20,6 @@ Result@64samples
 ![](img/64manyballs.png)
 
 
-各个采样数效果比较
-
-![](img/compare.PNG)
-
-256采样数结果
-
-![](img/256spp.png)
-
 
 Reference:
 

@@ -4,7 +4,7 @@
 小型光线追踪渲染器
 ，渲染经典Cornell Box场景
 
-Build需要CMake+OpenCV+OpenMP(可选)
+![](img/renderGUI.gif)
 
 使用:
 
@@ -14,11 +14,8 @@ Build需要CMake+OpenCV+OpenMP(可选)
 
 ●2x抗锯齿
 
-●均值滤波去噪，改善图像质量
 
-●OpenMP并行计算加速（性能还是呵呵...）
-
-ManyBalls@64samples
+Result@64samples
 
 ![](img/64manyballs.png)
 
@@ -30,9 +27,7 @@ ManyBalls@64samples
 256采样数结果
 
 ![](img/256spp.png)
-TODO.
 
-●添加界面
 
 Reference:
 

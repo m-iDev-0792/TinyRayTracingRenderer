@@ -33,7 +33,7 @@ MainWindow::~MainWindow()
 }
 void MainWindow::getRenderState(int percentage, int remainTime){
   ui->progressBar->setValue(percentage);
-  QString state=QString("progress %1 %\nreamin %2 s").arg(percentage).arg(remainTime);
+  QString state=QString("progress %1 %\n reamin %2 s").arg(percentage).arg(remainTime);
   ui->stateLabel->setText(state);
 }
 

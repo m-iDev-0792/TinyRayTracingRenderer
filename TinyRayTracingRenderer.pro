@@ -38,9 +38,3 @@ HEADERS += \
 FORMS += \
         mainwindow.ui
 
-INCLUDEPATH += /usr/local/include
-LIBS += -L/usr/local/Cellar/opencv@2/2.4.13.7_2/lib \
-	 -lopencv_core \
-	 -lopencv_highgui \
-	 -lopencv_imgproc
-
